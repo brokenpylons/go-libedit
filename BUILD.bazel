@@ -9,7 +9,6 @@ go_library(
     srcs = [
         "common.go",
         "editline_other.go",
-        "editline_unix.go",
         "version_check.go",
     ],
     importpath = "github.com/knz/go-libedit",
