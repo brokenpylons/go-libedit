@@ -21,37 +21,37 @@ go_library(
             "//other",
         ],
         "@io_bazel_rules_go//go/platform:android": [
-            "//unix",
+            "//other",
         ],
         "@io_bazel_rules_go//go/platform:darwin": [
-            "//unix",
+            "//other",
         ],
         "@io_bazel_rules_go//go/platform:dragonfly": [
-            "//unix",
+            "//other",
         ],
         "@io_bazel_rules_go//go/platform:freebsd": [
-            "//unix",
+            "//other",
         ],
         "@io_bazel_rules_go//go/platform:illumos": [
             "//other",
         ],
         "@io_bazel_rules_go//go/platform:ios": [
-            "//unix",
+            "//other",
         ],
         "@io_bazel_rules_go//go/platform:js": [
             "//other",
         ],
         "@io_bazel_rules_go//go/platform:linux": [
-            "//unix",
+            "//other",
         ],
         "@io_bazel_rules_go//go/platform:nacl": [
             "//other",
         ],
         "@io_bazel_rules_go//go/platform:netbsd": [
-            "//unix",
+            "//other",
         ],
         "@io_bazel_rules_go//go/platform:openbsd": [
-            "//unix",
+            "//other",
         ],
         "@io_bazel_rules_go//go/platform:plan9": [
             "//other",
