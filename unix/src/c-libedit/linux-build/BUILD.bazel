@@ -1,0 +1,12 @@
+load(":include-dirname.bzl", "dirname")
+
+dirname(
+    name = "dirname",
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "headers",
+    srcs = glob(["*.h"]),
+    visibility = ["//visibility:public"],
+)

@@ -27,8 +27,9 @@ import (
 
 // #cgo openbsd netbsd illumos freebsd dragonfly darwin LDFLAGS: -ledit
 // #cgo openbsd netbsd illumos freebsd dragonfly darwin CPPFLAGS: -Ishim
-// #cgo linux LDFLAGS: -ledit
-// #cgo linux CPPFLAGS: -I/usr/include/editline -Ishim
+// #cgo linux LDFLAGS: -lncurses
+// #cgo linux CFLAGS: -Wno-unused-result -Wno-pointer-sign
+// #cgo linux CPPFLAGS: -Isrc -Isrc/c-libedit -Isrc/c-libedit/editline -Isrc/c-libedit/linux-build -D_GNU_SOURCE
 //
 // #include <stdlib.h>
 // #include <stdio.h>

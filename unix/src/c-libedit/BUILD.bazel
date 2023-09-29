@@ -1,0 +1,21 @@
+cc_library(
+    name = "c-libedit",
+    srcs = glob([
+        "*.c",
+        "*.h",
+        "editline/readline.h",
+    ]),
+    hdrs = glob([
+        "*.h",
+        "*.c",
+        "editline/readline.h",
+    ]) + ["//unix/src/c-libedit/linux-build:headers"],
+    copts = [
+        "-I$(LINUX_BUILD_DIRNAME)",
+        "-I$(LINUX_BUILD_DIRNAME)/..",
+    ],
+    toolchains = [
+        "//unix/src/c-libedit/linux-build:dirname",
+    ],
+    visibility = ["//visibility:public"],
+)
